@@ -17,6 +17,9 @@ public class Calculations {
     }
     public static int sumOfDigits(int number) {
         int sum = 0;
+        if (number < 0) {
+            number *= -1;
+        }
         while (number > 0) {
             sum += number % 10;
             number /= 10;
@@ -25,6 +28,9 @@ public class Calculations {
     }
     public static int maxDigit(int number) {
         int max = 0;
+        if (number < 0) {
+            number *= -1;
+        }
         while (number > 0) {
             if (number % 10 > max) {
                 max = number % 10; 

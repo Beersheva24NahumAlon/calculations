@@ -25,10 +25,16 @@ public class CalculationsTest {
     @Test
     void sumOfDigitsTest() {
         assertEquals(6, sumOfDigits(123));
+        assertEquals(6, sumOfDigits(-123));
+        assertEquals(1, sumOfDigits(1));
+        assertEquals(0, sumOfDigits(0));
     }
     @Test
     void maxDigitTest() {
         assertEquals(3, maxDigit(123));
+        assertEquals(3, maxDigit(-123));
+        assertEquals(1, maxDigit(1));
+        assertEquals(0, maxDigit(0));
     }
     @Test
     void isDevidedOnTest() {
